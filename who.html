@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+<title>Drosko</title>
+<style>
+    body {
+        background: url('https://example.com/school-background.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .card-container {
+        display: flex;
+        gap: 40px;
+    }
+    .card {
+        width: 300px;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+        border: none;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+    .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+    .card:hover img {
+        transform: scale(1.1);
+    }
+    .card-body {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 20px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    .card:hover .card-body {
+        opacity: 1;
+    }
+    .card-title {
+        margin-bottom: 10px;
+    }
+
+    /* Media Queries for responsive design */
+    @media (max-width: 768px) {
+        .card-container {
+            flex-direction: row;
+            gap: 20px;
+        }
+        .card {
+            width: 100%;
+            height: auto;
+        }
+        
+    }
+
+    @media (max-width<= 480px) {
+        .card-body {
+            padding: 30px;
+        }
+        .card-title {
+            font-size: 16px;
+        }
+       
+        
+    }
+</style>
+
+<link rel="shortcut icon" href="images/logo5.png" />
+<link href="css/comming-soon.css" rel="stylesheet">
+</head>
+<body class="page-under-construction">
+    <div class="card-container">
+        <!-- كارد المعلم -->
+        <div class="card" style="border-radius: 30px;" onclick="window.location.href='tlogin.html'">
+            <img class="imgcard" src="images/use_img/teacher.jpg" alt="Teacher">
+            <div class="card-body text-center">
+                <a href="tlogin.html" class="btn btn-primary" style="text-decoration: none;">
+                    <h5 class="card-title">مدرس</h5>
+                </a>
+            </div>
+        </div>
+
+        <!-- كارد الطالب -->
+        <div class="card" style="border-radius: 30px;" onclick="window.location.href='student-login.html'">
+            <img class="imgcard" src="images/use_img/about-g2.jpg" alt="Student">
+            <div class="card-body text-center">
+                <a href="student-login.html" class="btn btn-primary" style="text-decoration: none;">
+                    <h5 class="card-title">طالب</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/countdown/js/jquery.plugin.min.js"></script>
+    <script type="text/javascript" src="vendor/countdown/js/jquery.countdown.min.js"></script>
+    <script type="text/javascript">
+        "use strict";
+        
+        if (jQuery('#countDown').length) {
+            var dateStr = jQuery('#countDown').data('end-date');
+            var a = dateStr.split(' ');
+            var d = a[0].split('-');
+            var t = a[1].split(':');
+            var date1 = new Date(d[0], (d[1] - 1), d[2], t[0], t[1], t[2]);
+            jQuery('#countDown').countdown({
+                until: date1,
+                labels: ['Years', 'Months', 'Weeks', 'Days', 'Hours', 'Minutes', 'Seconds'],
+                labels1: ['Year', 'Month', 'Week', 'Day', 'Hour', 'Minute', 'Second'],
+                timezone: 0,
+                layout: jQuery('#countDown').html()
+            });
+        }
+    </script>
+</body>
+</html>

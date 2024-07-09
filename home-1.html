@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--home-123:03  -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Drosko</title>
+
+
+<!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+<![endif]-->
+<!-- Font Awesome -->
+<link rel="shortcut icon" href="images/logo5.png" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<link rel="stylesheet" href="css/linearicons-free.css">
+
+<link rel="stylesheet" href="css/animate.css">
+
+<link rel="stylesheet" href="vendor/flexslider/flexslider.css">
+
+<link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.css">
+
+<link rel="stylesheet" href="vendor/fancybox/css/fancybox.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/kindergarten.css">
+
+
+
+
+
+<style>
+  .dropdown-menu{
+text-align: center; 
+
+ }
+
+
+   .profile-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+  body{
+    direction: rtl;
+    text-align: right;
+    
+  }
+  .flag-icon {
+            width: 30px;
+           
+        }
+        
+        .dropdown-item img {
+            width: 30px;
+        }
+        #languageDropdown img {
+            width: 30px;
+        }
+        .search-input {
+            display: none;
+            width: 200px;
+            transition: width 0.2s ease-in-out;
+        }
+        .search-icon {
+            cursor:alias;
+        }
+        .star-rating {
+            display: flex;
+            font-size: 2em;
+        }
+        .star {
+            cursor: pointer;
+            color: #ddd;
+        }
+        .star.checked {
+            color: rgba(26, 178, 105, 1)
+        }
+        .hidden {
+            display: none;
+        }
+</style>
+</head>
+<body>
+
+  <header class="site-header home-one" id="masthead">
+    <div class="container" style="width: 100%;">
+    
+    <div class="row">
+    
+    
+      <div class="col-xs-12 col-sm-3 col-lg-2"> <a href="home-1.html#"><img alt="educationpress" class="brand" src="images/logo5.png" style="width: 90px; margin: 20px;" /></a> </div>
+
+    <nav class="main-navigation navbar navbar-default" id="site-navigation">
+    
+    <div class="navbar-header">
+      
+    <button data-target=".navbar-ex1-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </button>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+    <li>
+    <a  role="button" aria-haspopup="true" aria-expanded="false" href="home-1.html#">
+    Home <span ></span></a>
+    
+    </li>
+    <li><a href="edit-data.html">Profile</a></li>
+
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="terms.html">Terms & Conditions</a></li>
+
+    <li><a href="who.html" style="color: rgba(26, 178, 105, 1);" >Log out</a></li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img id="selectedFlag" src="images/amirca.png" alt="Selected Language"> <span id="selectedLanguage" >English</span>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown" style="background-color: white;">
+          <a class="dropdown-item" href="#" onclick="setLanguage('اللغة العربية', 'images/egypt.png')">
+              <img src="images/egypt.png" style="width: 30px;" alt="اللغة العربية"> اللغة العربية
+          </a>
+          <div class="dropdown-divider"></div>
+    
+          <a class="dropdown-item" href="#" onclick="setLanguage('English', 'images/amirca.png')">
+              <img src="images/amirca.png" alt="English"> English
+          </a>
+      </div>
+    </li>
+    <li >
+      <img  class="fas fa-search search-icon" id="searchIcon" src="images/search.png" style="width: 30px; margin-top: 10px;" alt="">
+      <input type="text" class="form-control search-input" id="searchInput" placeholder="Search">
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img  src="images/use_img/post_author.jpg" alt="Profile Picture" class="profile-icon"> 
+          <span>هشام أحمد سراج</span>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="profileDropdown" style="background-color: white;">
+          <a class="dropdown-item" href="home-1.html" style="font-size: x-large; color: black;margin-bottom: 40px;"><img src="images/home.png" style="width: 10%;margin-left: 5px;" alt="">الرئيسية </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="magmoate.html" style="font-size: x-large; color: black;margin-bottom: 40px;"><img src="images/crowd-of-users.png" style="width: 10%;margin-left: 5px;" alt="">المجموعات </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="exam.html" style="font-size: x-large; color: black;margin-bottom: 40px;"><img src="images/to-do-list.png" style="width: 10%;margin-left: 5px;" alt="">الامتحانات </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="Activity-day.html" style="font-size: x-large; color: black;margin-bottom: 40px;"><img src="images/accessibility.png" style="width: 10%;margin-left: 5px;" alt="">نشاطات الطلاب </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="notifaction.html" style="font-size: x-large; border-color: black;margin-bottom: 40px;"><img src="images/bell.png" style="width: 10%;margin-left: 5px;" alt="">التنبيهات </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="metting.html" style="font-size: x-large; color: black;margin-bottom: 40px;"><img src="images/cam-recorder.png" style="width: 10%;margin-left: 5px;" alt="">الميتنج </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="Activity-chat.html" style="font-size: x-large; border-color: black;margin-bottom: 40px;"><img src="images/chat.png" style="width: 10%;margin-left: 5px;" alt="">الدردشه </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="rating.html" style="font-size: x-large; border-color: black;margin-bottom: 40px;"><img src="images/star.png" style="width: 10%;margin-left: 5px;" alt="">التقيمات </a>
+        
+      </div>
+    </li>
+    
+    <li class="pull-right"><a title="View your cart" href="#" class="menu-cart"><img src="images/notification-bell.png" style="width: 20px;" alt=""> <span>0</span></a></li>
+    </ul>
+    </div>
+    </nav>
+    
+    </div>
+    
+    </div>
+    
+    </header>
+
+   
+<div id="flex" class="flexslider kindergarten">
+  <ul class="slides">
+  
+  <li style="background:url(images/use_img/banner1.jpg) no-repeat center; background-size:cover;">
+  <div class="container">
+  <div class="row">
+  <div class="slide-caption">
+  <h2 data-animation="animated bounceInLeft"> An Innovative Graduate university of Theology </h2>
+  <a href="home-1.html#" data-animation="animated zoomInUp" class="btn btn-medium btn-blue">View Campus <i class="lnr lnr-arrow-right"></i></a> </div>
+  </div>
+  </div>
+  </li>
+  
+  
+  <li style="background:url(images/use_img/banner1.jpg) no-repeat center; background-size:cover;">
+  <div class="container">
+  <div class="row">
+  <div class="slide-caption">
+  <h2 data-animation="animated bounceInLeft"> An Innovative Graduate University of Theology </h2>
+  <a href="home-1.html#" data-animation="animated zoomInUp" class="btn btn-medium btn-blue">View Campus <i class="lnr lnr-arrow-right"></i></a> </div>
+  </div>
+  </div>
+  </li>
+  
+  </ul>
+  </div>
+
+
+  <div class="col-xs-6 col-sm-4 col-lg-4 zoom dropdown">
+      <button style="border-color: rgba(1, 36, 78, 1); margin-bottom: 40px;"  class="dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img id="selectedPart" src="images/one.png" alt="Selected part"> <span id="selectedpart" >ترم أول</span>
+      </button>
+
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" style="background-color: white;">
+          <a class="dropdown-item" href="#" onclick="setpart('ترم أول', 'images/one.png')">
+              <img src="images/one.png" style="margin-bottom: 5px;"  style="width: 30px;" alt="ترم ثاني"> ترم أول
+          </a>
+          <div class="dropdown-divider"></div>
+    
+          <a class="dropdown-item" href="#" onclick="setpart('ترم ثاني', 'images/two.png')">
+              <img src="images/two.png" style="margin-bottom: 5px;"  alt="ترم ثاني"> ترم ثاني
+          </a>
+      </div>
+   
+
+    </div>
+    <div class="col-xs-6 col-sm-4 col-lg-5 zoom dropdown">
+      <button style="border-color: rgba(1, 36, 78, 1); margin-bottom: 40px; margin-right: 20px;"  class="dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img id="selectedYear" src="images/one.png" alt="Selected year"> <span id="selectedyear" >الصف ألأول الثانوي</span>
+    </button>
+
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" style="background-color: white;">
+        <a class="dropdown-item" href="#"  onclick="setyear('الصف ألأول الثانوي', 'images/one.png')">
+            <img src="images/one.png" style="margin-bottom: 5px;"  style="width: 30px;" alt="ترم ثاني">الصف ألأول الثانوي
+        </a>
+        <div class="dropdown-divider"></div>
+  
+        <a class="dropdown-item" href="#" onclick="setyear('الصف الثاني الثانوي', 'images/two.png')">
+            <img src="images/two.png" style="margin-bottom: 5px;"  alt="ترم ثاني">الصف الثاني الثانوي
+        </a>
+        <div class="dropdown-divider"></div>
+
+        <a class="dropdown-item" href="#" onclick="setyear('الصف الثالث الثانوي', 'images/three.png')">
+          <img src="images/three.png" style="margin-bottom: 5px;"  alt="ترم ثاني">الصف ألثالث الثانوي
+      </a>
+    </div>
+  </div>
+  <main id="main" style="text-align: center;" class="site-main col-xs-12 ">
+   
+  <div class="school-classes inner-classes">
+    
+  <div class="col-xs-12 col-sm-4 zoom">
+  <div class="classes">
+  <a href="classes-3-columns.html#" class="img-thumb"><figure>
+    
+   <img src="images/use_img/course_img1.png" alt="" /></figure></a>
+   
+  <div class="row classes-info">
+    <h2 ><a href="#"><img class="profile-icon" style="width: 15%; height: auto;" src="images/use_img/teacher_img1.jpg"  alt="">هشام أحمد عبدالمقصود</a></h2>
+
+  <a href="#" style="text-decoration: none;"><h3>الدرس الاول : قانون الجذب لنيوتن.</h3></a>
+  <ul class=" classes-time">
+  <li><span>  <img src="images/use_img/eye.png" style="width: 20px;margin-left: 5px;" alt="">  250   </span>
+   </li>
+  <li></li>
+  <li><span><img src="images/use_img/clock.png" style="width: 20px;margin-left: 5px;" alt="">مدة الفيديو 30 دقيقة</span>
+  </ul>
+  <div class="star-rating" style="margin-top: 40px;">
+    <i class="star fas fa-star" style="color: rgba(26, 178, 105, 1)" data-rating="5"></i>
+    <i class="star fas fa-star" style="color: rgba(26, 178, 105, 1)" data-rating="4"></i>
+    <i class="star fas fa-star" style="color: rgba(26, 178, 105, 1)" data-rating="3"></i>
+    <i class="star fas fa-star"   data-rating="2"></i>
+    <i class="star fas fa-star"   data-rating="1"></i>
+    <p class="data-rating" style="font-size: large; ">3</p>
+</div>
+</div>
+  </div>
+  </div> 
+  <div class="col-xs-12 col-sm-4 zoom">
+    <div class="classes">
+    <a href="classes-3-columns.html#" class="img-thumb"><figure>
+      
+     <img src="images/use_img/course_img1.png" alt="" /></figure></a>
+     
+    <div class="row classes-info">
+      <h2 ><a href="#"><img class="profile-icon" style="width: 15%; height: auto;" src="images/use_img/teacher_img1.jpg"  alt="">هشام أحمد عبدالمقصود</a></h2>
+  
+    <a href="#" style="text-decoration: none;"><h3>الدرس الاول : قانون الجذب لنيوتن.</h3></a>
+    <ul class=" classes-time">
+    <li><span>  <img src="images/use_img/eye.png" style="width: 20px;margin-left: 5px;" alt="">  250   </span>
+     </li>
+    <li></li>
+    <li><span><img src="images/use_img/clock.png" style="width: 20px;margin-left: 5px;" alt="">مدة الفيديو 30 دقيقة</span>
+    </ul>
+    <div class="star-rating" style="margin-top: 40px;">
+      <i class="star fas fa-star" style="color: rgba(26, 178, 105, 1)" data-rating="5"></i>
+      <i class="star fas fa-star" style="color: rgba(26, 178, 105, 1)" data-rating="4"></i>
+      <i class="star fas fa-star" style="color: rgba(26, 178, 105, 1)" data-rating="3"></i>
+      <i class="star fas fa-star"   data-rating="2"></i>
+      <i class="star fas fa-star"   data-rating="1"></i>
+      <p class="data-rating" style="font-size: large; ">3</p>
+  </div>
+  </div>
+    </div>
+    </div> 
+    <div class="col-xs-12 col-sm-4 zoom">
+      <div class="classes">
+      <a href="classes-3-columns.html#" class="img-thumb"><figure>
+        
+       <img src="images/use_img/course_img1.png" alt="" /></figure></a>
+       
+      <div class="row classes-info">
+        <h2 ><a href="#"><img class="profile-icon" style="width: 15%; height: auto;" src="images/use_img/teacher_img1.jpg"  alt="">هشام أحمد عبدالمقصود</a></h2>
+    
+      <a href="#" style="text-decoration: none;"><h3>الدرس الاول : قانون الجذب لنيوتن.</h3></a>
+      <ul class=" classes-time">
+      <li><span>  <img src="images/use_img/eye.png" style="width: 20px;margin-left: 5px;" alt="">  250   </span>
+       </li>
+      <li></li>
+      <li><span><img src="images/use_img/clock.png" style="width: 20px;margin-left: 5px;" alt="">مدة الفيديو 30 دقيقة</span>
+      </ul>
+      <div class="star-rating" style="margin-top: 40px;">
+        <i class="star fas fa-star" style="color: rgba(26, 178, 105, 1)" data-rating="5"></i>
+        <i class="star fas fa-star" style="color: rgba(26, 178, 105, 1)" data-rating="4"></i>
+        <i class="star fas fa-star" style="color: rgba(26, 178, 105, 1)" data-rating="3"></i>
+        <i class="star fas fa-star"   data-rating="2"></i>
+        <i class="star fas fa-star"   data-rating="1"></i>
+        <p class="data-rating" style="font-size: large; ">3</p>
+    </div>
+    </div>
+      </div>
+      </div>  
+      <div class="col-xs-12 col-sm-4 zoom">
+        <div class="classes">
+        <a href="classes-3-columns.html#" class="img-thumb"><figure>
+          
+         <img src="images/use_img/course_img1.png" alt="" /></figure></a>
+         
+        <div class="row classes-info">
+          <h2 ><a href="#"><img class="profile-icon" style="width: 15%; height: auto;" src="images/use_img/teacher_img1.jpg"  alt="">هشام أحمد عبدالمقصود</a></h2>
+      
+        <a href="#" style="text-decoration: none;"><h3>الدرس الاول : قانون الجذب لنيوتن.</h3></a>
+        <ul class=" classes-time">
+        <li><span>  <img src="images/use_img/eye.png" style="width: 20px;margin-left: 5px;" alt="">  250   </span>
+         </li>
+        <li></li>
+        <li><span><img src="images/use_img/clock.png" style="width: 20px;margin-left: 5px;" alt="">مدة الفيديو 30 دقيقة</span>
+        </ul>
+        <div class="star-rating" style="margin-top: 40px;">
+          <i class="star fas fa-star" style="color: rgba(26, 178, 105, 1)" data-rating="5"></i>
+          <i class="star fas fa-star" style="color: rgba(26, 178, 105, 1)" data-rating="4"></i>
+          <i class="star fas fa-star" style="color: rgba(26, 178, 105, 1)" data-rating="3"></i>
+          <i class="star fas fa-star"   data-rating="2"></i>
+          <i class="star fas fa-star"   data-rating="1"></i>
+          <p class="data-rating" style="font-size: large; ">3</p>
+      </div>
+      </div>
+        </div>
+        </div> 
+        <div class="col-xs-12 col-sm-4 zoom">
+          <div class="classes">
+          <a href="classes-3-columns.html#" class="img-thumb"><figure>
+            
+           <img src="images/use_img/course_img1.png" alt="" /></figure></a>
+           
+          <div class="row classes-info">
+            <h2 ><a href="#"><img class="profile-icon" style="width: 15%; height: auto;" src="images/use_img/teacher_img1.jpg"  alt="">هشام أحمد عبدالمقصود</a></h2>
+        
+          <a href="#" style="text-decoration: none;"><h3>الدرس الاول : قانون الجذب لنيوتن.</h3></a>
+          <ul class=" classes-time">
+          <li><span>  <img src="images/use_img/eye.png" style="width: 20px;margin-left: 5px;" alt="">  250   </span>
+           </li>
+          <li></li>
+          <li><span><img src="images/use_img/clock.png" style="width: 20px;margin-left: 5px;" alt="">مدة الفيديو 30 دقيقة</span>
+          </ul>
+          <div class="star-rating" style="margin-top: 40px;">
+            <i class="star fas fa-star" style="color: rgba(26, 178, 105, 1)" data-rating="5"></i>
+            <i class="star fas fa-star" style="color: rgba(26, 178, 105, 1)" data-rating="4"></i>
+            <i class="star fas fa-star" style="color: rgba(26, 178, 105, 1)" data-rating="3"></i>
+            <i class="star fas fa-star"   data-rating="2"></i>
+            <i class="star fas fa-star"   data-rating="1"></i>
+            <p class="data-rating" style="font-size: large; ">3</p>
+        </div>
+        </div>
+          </div>
+          </div>  
+          <div class="col-xs-12 col-sm-4 zoom">
+            <div class="classes">
+            <a href="classes-3-columns.html#" class="img-thumb"><figure>
+              
+             <img src="images/use_img/course_img1.png" alt="" /></figure></a>
+             
+            <div class="row classes-info">
+              <h2 ><a href="#"><img class="profile-icon" style="width: 15%; height: auto;" src="images/use_img/teacher_img1.jpg"  alt="">هشام أحمد عبدالمقصود</a></h2>
+          
+            <a href="#" style="text-decoration: none;"><h3>الدرس الاول : قانون الجذب لنيوتن.</h3></a>
+            <ul class=" classes-time">
+            <li><span>  <img src="images/use_img/eye.png" style="width: 20px;margin-left: 5px;" alt="">  250   </span>
+             </li>
+            <li></li>
+            <li><span><img src="images/use_img/clock.png" style="width: 20px;margin-left: 5px;" alt="">مدة الفيديو 30 دقيقة</span>
+            </ul>
+            <div class="star-rating" style="margin-top: 40px;">
+              <i class="star fas fa-star" style="color: rgba(26, 178, 105, 1)" data-rating="5"></i>
+              <i class="star fas fa-star" style="color: rgba(26, 178, 105, 1)" data-rating="4"></i>
+              <i class="star fas fa-star" style="color: rgba(26, 178, 105, 1)" data-rating="3"></i>
+              <i class="star fas fa-star"   data-rating="2"></i>
+              <i class="star fas fa-star"   data-rating="1"></i>
+              <p class="data-rating" style="font-size: large; ">3</p>
+          </div>
+          </div>
+            </div>
+            </div> 
+  </div> 
+    <button type="button" class="btn btn-medium btn-primary" data-toggle="modal" data-target="#exampleModal" style="background-color: rgba(1, 36, 78, 1); color: white;" data-whatever="@getbootstrap">رفع فيديو</button>
+    
+    <div class="modal " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">بيانات الفيديو</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+              <img src="images/use_img/teacher_img1.jpg" style="width: 100px; height: 100px; border-radius: 100px;" alt="">
+              </div>
+              <div class="col-lg-6" style="margin-bottom: 10px;">
+                <label for="recipient-name" class="col-form-label">الاسم رباعى</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+              <div class="col-lg-6" style="margin-bottom: 10px;">
+                <label for="message-text" class="col-form-label">التخصص</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+              <div class="col-lg-6" style="margin-bottom: 10px;">
+                <input style="margin: 20px;" type="file" id="imageInput">
+
+              </div>
+              <div class="col-lg-6" style="margin-bottom: 10px;">
+                <label for="recipient-name" class="col-form-label">البريد الالكترونى</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+              
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" style="background-color: rgba(26, 178, 105, 1);">Save</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+  <div class="pagination">
+    <a href="home-1.html" class="next page-numbers"><i class="fa fa-angle-right"></i></a>
+
+  <a href="home-1.html" class="page-numbers">1</a>
+  <a href="home-1.html" class="page-numbers">2</a>
+  <a href="home-1.html" class="page-numbers">3</a>
+  </div>
+
+ 
+  </main>
+
+  <footer class="site-footer" id="colophon" style="text-align: left;">
+    <div class="container">
+    <div class="row">
+    <div class="col-xs-12 col-sm-4"><img src="images/logo5.png" style="width: 40%;" alt="" /></div>
+    </div>
+    <div class="row">
+    <div class="col-xs-12 col-sm-4 footer-widget">
+    
+    <aside class="widget socialmedia-widget">
+    <ul class="social">
+    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+    </ul>
+    </aside>
+    </div>
+    <div class="col-xs-12 col-sm-4 footer-widget">
+    <aside class="widget widget_nav_menu">
+    <ul class="menu">
+    <li><a href="home-1.html#">Home</a></li>
+    <li><a href="home-1.html#">Shortcodes</a></li>
+    <li><a href="home-1.html#">about US</a></li>
+    <li><a href="home-1.html#">Blog</a></li>
+    <li><a href="home-1.html#">classes</a></li>
+    <li><a href="home-1.html#">Contact US</a></li>
+    <li><a href="home-1.html#">Teachers</a></li>
+    <li><a href="home-1.html#">Privacy Policy</a></li>
+    <li><a href="home-1.html#">Events</a></li>
+    </ul>
+    </aside>
+    </div>
+    <div class="col-xs-12 col-sm-4 footer-widget">
+    <aside class="widget newsletter-widget">
+    <h3>Sign up now</h3>
+    <p>When an printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <form id="newsletter">
+    <input type="email" name="email" class="form-control" placeholder="Email" />
+    <button type="submit" value="" class="btn btn-orange btn-medium"><i class="lnr lnr-arrow-right"></i></button>
+    </form>
+    </aside>
+    </div>
+  
+    </div> 
+    </div>
+    
+    <div class="footer-bottom">
+    <div class="container">
+    <div class="row">
+    <div class="copyright">
+    
+    </div>
+    </div>
+    </div>
+    </div>
+    </footer>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="vendor/flexslider/jquery.flexslider-min.js"></script>
+
+<script src="vendor/owlcarousel/owl.carousel.js"></script>
+<script>
+jQuery.noConflict();
+jQuery( document ).ready(function( $ ) {
+
+var owl = $("#owl-classes");
+
+owl.owlCarousel({
+
+items : 3, //10 items above 1000px browser width
+itemsDesktop : [1000,3], //5 items between 1000px and 901px
+itemsDesktopSmall : [900,3], // 3 items betweem 900px and 601px
+itemsTablet: [640,2],
+itemsMobile : [480,1], // itemsMobile disabled - inherit from itemsTablet option
+navigation: false,
+pagination: true,
+autoPlay:true
+});
+
+var owl = $("#owl-teachers");
+
+owl.owlCarousel({
+
+items : 2, //10 items above 1000px browser width
+itemsDesktop : [1000,2], //5 items between 1000px and 901px
+itemsDesktopSmall : [900,2], // 3 items betweem 900px and 601px
+itemsTablet: [600,1],
+itemsMobile : [480,1], // itemsMobile disabled - inherit from itemsTablet option
+navigation: false,
+pagination: true,
+autoPlay:true
+});
+
+});
+</script>
+
+<script src="js/theme.js"></script>
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+
+<script type="text/javascript" src="vendor/fancybox/js/jquery.fancybox.js"></script>
+<script type="text/javascript" src="vendor/fancybox/js/custom.fancybox.js"></script>
+<script>
+jQuery.noConflict();
+jQuery('.fancybox').fancybox();
+</script>
+<script>
+  function setLanguage(language, flagUrl) {
+      document.getElementById('selectedLanguage').textContent = language;
+      document.getElementById('selectedFlag').src = flagUrl;
+  };
+  function setpart(part, partUrl) {
+        document.getElementById('selectedpart').textContent = part;
+        document.getElementById('selectedPart').src = partUrl;
+    };
+    function setyear(year, yearUrl) {
+      document.getElementById('selectedyear').textContent = year;
+      document.getElementById('selectedYear').src = yearUrl;
+  };
+  document.addEventListener('DOMContentLoaded', function () {
+      const searchIcon = document.getElementById('searchIcon');
+      const searchInput = document.getElementById('searchInput');
+
+      searchIcon.addEventListener('click', function () {
+          searchIcon.style.display = 'none';
+          searchInput.style.display = 'inline-block';
+          searchInput.focus();
+      });
+
+      document.addEventListener('click', function (event) {
+          if (!searchInput.contains(event.target) && !searchIcon.contains(event.target)) {
+              searchInput.style.display = 'none';
+              searchIcon.style.display = 'inline-block';
+          }
+      });
+
+      searchInput.addEventListener('click', function (event) {
+          event.stopPropagation();
+      });
+  });
+  document.addEventListener('DOMContentLoaded', function () {
+            const stars = document.querySelectorAll('.star');
+            let currentRating = 0;
+
+            stars.forEach(star => {
+                star.addEventListener('click', setRating);
+            });
+
+            function setRating(event) {
+                const clickedStar = event.currentTarget;
+                const rating = clickedStar.getAttribute('data-rating');
+                currentRating = rating;
+
+                stars.forEach(star => {
+                    star.classList.remove('checked');
+                    if (star.getAttribute('data-rating') <= rating) {
+                        star.classList.add('checked');
+                    }
+                });
+            }
+        });
+       </script>
+
+<script src="js/wow.min.js"></script>
+<script> new WOW().init(); </script>
+
+</body>
+
+<!--home-123:18  -->
+</html>
